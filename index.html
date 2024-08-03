@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body style="background-image: url('assets/img/telai.jpg');">
+    
+    <div class="climate" style="font-size: 20px; color: #fff;"></div>
+
+    <img class="tempC" src="htp://openweathermap.org/img/wn/10d@2x.pntg" style="display: none;"/>
+
+    <div class="desc">
+        <h1>Observe o Clima na sua cidade</h1>
+    </div>
+
+    <form class="search">
+
+        <div class="text"> Qualquer Estado </div>
+
+        <input type="search" id="searchInput" autocomplete="off" placeholder="Preencha com o estado"/>
+
+        <label class="label"  >
+            <div class="text">Estados Brasileiros</div>
+            <select name="city" id="city">
+            <option value="opçao1"></option>
+            <option>Acre</option>
+            <option>Alagoas</option>
+            <option>Amapá</option>
+            <option>Amazonas</option>
+            <option>Bahia</option>
+            <option>Ceará</option>
+            <option>Distrito Federal</option>
+            <option>Espírito Santo</option>
+            <option>Goiás</option>
+            <option>Maranhão</option>
+            <option>Mato Grosso</option>
+            <option>Mato Grosso do Sul</option>
+            <option>Minas Gerais</option>
+            <option>Pará</option>
+            <option>Paraíba</option>
+            <option>Paraná</option>
+            <option>Pernambuco</option>
+            <option>Piauí</option>
+            <option>Rio de Janeiro</option>
+            <option>Rio Grande do Norte</option>
+            <option>Rio Grande do Sul</option>
+            <option>Rondônia</option>
+            <option>Roraima</option>
+            <option>Santa Catarina</option>
+            <option>São Paulo</option>
+            <option>Sergipe</option>
+            <option>Tocantins</option>
+            </select>
+        </label><br/> 
+
+        <button>Buscar</button>
+
+    </form>
+
+    <div class="result">
+        <div class="title"></div>
+
+        <div class="info">
+            <div class="temp">
+               <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                <div class="tempT">Temperatura</div>
+                <div class="tempI"> </div>
+            </div>
+
+            <div class="hw">
+                <div class="humi">
+                    <img src="assets/img/humidade.png" style="width: 70px; height: 35px;">
+                    <div class="humiT">Humidade</div>
+                    <div class="humiI"> </div>
+                </div>
+
+
+                <div class="wind">
+                    <div class="windT">Vento</div>
+                    <div class="windI"> </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="aviso"></div>
+
+    <footer>
+        Site por Gerson Silva Carneiro para fins estudantis
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
